@@ -23,12 +23,15 @@ public class Pacote {
  
   
      
-  List<String> L = new ArrayList<>();
-  List<String> strPacotes =new ArrayList<>();
+  private List<String> L = new ArrayList<>();
+  private List<String> strPacotes =new ArrayList<>();
   
   
   
-  public Pacote(String [] array) 
+
+
+
+public Pacote(String [] array) 
   
   {
 	  nPacotesRec(array);
@@ -39,13 +42,17 @@ public class Pacote {
 	  procuraEnd(array);
 	  ordenando();
 	  setIdentfy();
+	  
 	  setBuffer();
 	  certificarPacotes();
 	  setBigBuffer();
+	  if (status==1) {
 	  setSinal();
 	  setCasasDecimais();
 	  setNumeroDecimalFinal();
 	  setValorContido();
+	  }
+	  
 	  
 	  
 	  
@@ -121,8 +128,23 @@ public class Pacote {
 	  
   }
  
+  public String getBegin() {
+	  return begin;
+  }
+  public int getStatus() {
+	  return status;
+  }
+  public int getNpacotes() {
+	  return nPacotes;
+  }
   
-  
+  public String getStrPacotes(int i) {
+	return strPacotes.get(i);
+}
+
+  public String getValorContidoPacotes() {
+	  return valorContidoPacotes;
+  }
   
   
 
@@ -226,7 +248,7 @@ public class Pacote {
 	  }
 	  System.out.println(end);
 	  
-	  /*
+	
 	  System.out.println(Integer.toString( nPacotes)+ Integer.toString(nPacotesRec)+
   "|"+begin+"|"+
   Integer.toString (posBegin)+
@@ -249,8 +271,7 @@ public class Pacote {
 //	  int casa=0;
 //	  System.out.print(String.format ("% ."+String.valueOf(casa)+"f", numeroDecimalFinal/-1000 ));
 	  System.out.print(valorContidoPacotes);
-	  System.out.print( "");
-*/
+
   }
   
   /**

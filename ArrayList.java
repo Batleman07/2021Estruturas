@@ -1,5 +1,6 @@
 package Trab_seg_bim;
 
+
 public class ArrayList<T> implements List<T> {
 	  // valor padrão para a capacidade do vetor.
     private final static int DEFAULT_CAPACITY = 100;
