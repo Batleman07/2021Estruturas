@@ -1,6 +1,6 @@
 # TRABALHO ESTRUTURA DE DADOS_ B3 -Trabalho 01 - Trabalho - 24-08-2021
 ---------------------------------------------------------
-##             DOSCENTE: LEANDERSON ANDRÉ
+##             DOCENTE: LEANDERSON ANDRÉ
 ---------------------------------------------------------
 Alunos: {Alessandro Marques}
 ---------------------------------------------------------
